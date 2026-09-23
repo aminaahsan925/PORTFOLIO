@@ -22,6 +22,20 @@
     .contact{text-align:center;padding:120px 0;background:var(--lime);color:var(--black)}.contact .label{color:#536300}.contact h2{margin:15px 0;font:600 clamp(3.2rem,8vw,8rem)/.84 var(--display);letter-spacing:-.1em;text-transform:uppercase}.contact p{max-width:430px;margin:0 auto 28px;font-size:.92rem}.contact .button{background:var(--black);color:var(--lime);border-color:var(--black)}.contact .button:hover{background:var(--white);color:var(--black);border-color:var(--white)}footer{padding:23px 0;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em}.footer-inner{display:flex;justify-content:space-between;gap:20px}
     @media (min-width:700px){.nav-links{display:flex}}@media (max-width:760px){.hero-bottom,.section-head{display:block}.hero-actions{margin-top:25px}.section-note{margin-top:20px}.project-card,.project-card:nth-child(3),.project-card:nth-child(4){grid-column:span 12}.split,.details-grid{grid-template-columns:1fr;gap:35px}.role{grid-template-columns:1fr;gap:8px}.role-meta{text-align:left}.hero h1{font-size:clamp(4rem,18vw,7rem)}.footer-inner{display:block}.footer-inner span{display:block;margin:7px 0}}
     @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+    /* Reference-matched hero artwork. The supplied image contains the exact
+       composition, typography, portrait, navigation, and annotations. */
+    header { display: none; }
+    .hero { min-height: 0; height: auto; aspect-ratio: 1600 / 960; padding: 0; background: #090909 url("hero-reference.png") center top / contain no-repeat; }
+    .hero > .wrap { height: 100%; }
+    .hero > .wrap > * { display: none; }
+    .marquee { margin-top: 0; }
+
+    @media (max-width: 700px) {
+      .hero { aspect-ratio: 1600 / 960; background-size: contain; background-position: center top; }
+      .marquee { padding: 18px 0; }
+      section { padding-top: 76px; padding-bottom: 76px; }
+    }
   </style>
 </head>
 <body>
